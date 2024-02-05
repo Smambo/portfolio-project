@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divitiae Wealth Tracker</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <h1>Divitiae</h1>
+    </nav>
+
+    <div class="container">
+        <!-- User Registration Form -->
+        <section id="registration" style="display: none;">
+            <h2>User Registration</h2>
+            <form id="registrationForm">
+                <div>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit">Register</button>
+            </form>
+        </section>
+
+        <!-- User Login Form -->
+        <section id="login">
+            <h2>User Login</h2>
+            <form id="loginForm">
+                <div>
+                    <label for="loginUsername">Username:</label>
+                    <input type="text" id="loginUsername" name="loginUsername" required>
+                </div>
+                <div>
+                    <label for="loginPassword">Password:</label>
+                    <input type="password" id="loginPassword" name="loginPassword" required>
+                </div>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+
+        <!-- Portfolio Overview -->
+        <section id="portfolioOverview" style="display: none;">
+            <h2>My Portfolios</h2>
+            <ul id="portfolioList"></ul>
+        </section>
+
+        <!-- Stock Details -->
+        <section id="stockDetails" style="display: none;">
+            <h2>Stock Details</h2>
+            <div id="stockInfo"></div>
+        </section>
+    </div>
+
+    <script src="assets/js/api.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
