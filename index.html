@@ -10,31 +10,25 @@
 </head>
 
 <body>
-    <!-- Navigation Bar -->
-    <nav>
-        <h1>Divitiae</h1>
-        <div class="nav-buttons">
-            <i class="fa-solid fa-gear"><button id="settingsButton">Settings</button></i>
-            <i class="fa-solid fa-arrow-right-from-bracket"><button id="logoutButton">Logout</button></i>
-        </div>
-    </nav>
-
     <div class="container">
-        <!-- Portfolio Overview -->
-        <section id="portfolioOverview" style="display: none;">
-            <h2>My Portfolios</h2>
-            <ul id="portfolioList"></ul>
-        </section>
-
-        <!-- Stock Details -->
-        <section id="stockDetails" style="display: none;">
-            <h2>Stock Details</h2>
-            <div id="stockInfo"></div>
-        </section>
+        <!--Sidebar nav-->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#"><i class="fa-solid fa-chart-line"></i>Dashboard</a>
+            <a href="#"><i class="fa-regular fa-newspaper"></i>News</a>
+            <a href="#"><i class="fa-solid fa-gear"></i>Account</a>
+            <a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a>
+          </div>
+          
+          <div id="main">
+            <h2>Main page</h2>
+            <p>Still need to add sections for the stock charts</p>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+          </div>
     </div>
 
     <script src="assets/js/api.js"></script>
-    <script src="assets/js/app.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
