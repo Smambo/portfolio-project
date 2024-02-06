@@ -9,3 +9,14 @@ function openNav() {
     document.getElementById("main").style.marginLeft= "0";
     document.body.style.backgroundColor = "white";
   }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var logoutLink = document.getElementById('logoutLink');
+    if (logoutLink) {
+        logoutLink.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevents the default link behavior
+            // Redirect the user to the login page
+            window.location.href = 'login.html';
+        });
+    }
+});
