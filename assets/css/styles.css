@@ -50,5 +50,5 @@ body {
 
   .sidenav i {
     padding: 5px;
-    margin-right: 3px;
+    margin-right: 3px; /*added space between icons and anchor tags*/
   }
