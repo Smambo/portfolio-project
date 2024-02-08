@@ -1,6 +1,8 @@
 body {
     font-family: "Lato", sans-serif;
     transition: background-color .5s;
+    background-color: #d1cfcf;
+    color: #333;
   }
   
   .sidenav {
@@ -52,3 +54,62 @@ body {
     padding: 5px;
     margin-right: 3px; /*added space between icons and anchor tags*/
   }
+
+  /* Dashboard styles */
+#dashboardContent {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+#dashboardData {
+  display: flex;
+  justify-content: space-between;
+}
+
+#dashboardData div {
+  flex-basis: 45%;
+}
+
+#dashboardData h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+#dashboardData p, #dashboardData ul {
+  color: #666;
+}
+
+/* Live stock data styles */
+#liveStockData {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#stockChart, #stockNews {
+  margin-bottom: 20px;
+}
+
+#stockChart h3, #stockNews h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+#stockChart p, #stockNews ul {
+  color: #666;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .sidenav {
+      width: 200px;
+  }
+  
+  #main {
+      margin-left: 200px;
+  }
+}
