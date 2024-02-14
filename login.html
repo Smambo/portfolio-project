@@ -4,83 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f2f5;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-
-        #login {
-            background-color: #ffffff;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-            max-width: 400px;
-            width: 100%;
-        }
-
-        h2 {
-            font-size: 24px;
-            margin-bottom: 20px;
-            text-align: center;
-            color: #333333;
-        }
-
-        form {
-            display: flex;
-            flex-direction: column;
-        }
-
-        label {
-            font-size: 16px;
-            color: #555555;
-            margin-bottom: 8px;
-        }
-
-        input {
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #dddddd;
-            background-color: #dddddd;
-            border-radius: 8px;
-            font-size: 16px;
-            width: calc(100% - 21px);
-        }
-
-        button {
-            padding: 12px 20px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 16px;
-            transition: background-color 0.3s;
-        }
-
-        button:hover {
-            background-color: #45a049;
-        }
-        .register-link {
-            text-align: center;
-            font-size: 14px;
-            margin-top: 10px;
-        }
-
-        .register-link a {
-            color: #333333;
-            text-decoration: none;
-        }
-
-        .register-link a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <link rel="stylesheet" href="assets/css/login.css">
 </head>
 <body>
     <!-- User Login Form -->
@@ -93,7 +17,7 @@
             <div>
                 <input type="password" id="loginPassword" name="password" placeholder="Password" required>
             </div>
-            <button type="submit">Login</button>
+            <button type="submit" id="loginSubmit" >Login</button>
             <div class="register-link">
                 <span>Don't have an account?</span>
                 <a href="registration.html">Register here</a>
