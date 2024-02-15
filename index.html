@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Divitiae Wealth Tracker</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/search-bar.css">
     <script src="https://kit.fontawesome.com/27fc76bc69.js" crossorigin="anonymous"></script>
 </head>
 
@@ -16,14 +17,20 @@
             <a href="/dashboard"></a>
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="#"><i class="fa-solid fa-chart-line"></i>Dashboard</a>
-            <a href="#"><i class="fa-regular fa-newspaper"></i>News</a>
+            <a href="https://www.google.com/finance/" target="_blank"><i class="fa-regular fa-newspaper"></i>News</a>
             <a href="#"><i class="fa-solid fa-gear"></i>Account</a>
             <a href="#" id="logoutLink"><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a>
           </div>
           
           <div id="main">
-            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-            <h2>Dashboard</h2>
+            <div class="dashboard-header">
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                <h2>Dashboard</h2>
+                <div class="search-bar-container">
+                    <input type="text" placeholder="Search for stocks" class="search-bar" id="searchInput"> <!-- Search bar -->
+                    <button type="submit" class="search-button" onclick="searchStock()"><i class="fa-solid fa-search"></i></button> <!-- Search button -->
+                </div>
+            </div>
             <!-- Dashboard content -->
             <div id="dashboardContent">
               <!-- Placeholder for dashboard data -->
@@ -54,16 +61,24 @@
               </div>
               <div id="stockNews">
                   <h3>Stock News</h3>
-                  <ul>
-                      <li>Loading...</li> <!-- Placeholder for actual news -->
-                      <li>Loading...</li>
-                      <li>Loading...</li>
-                  </ul>
+                    <a href="https://www.google.com/finance/" target="_blank">Check out today's financial news</a>
+                    <div class="article">
+                        <a href="https://www.moneyweb.co.za/news/markets/rand-steady-in-early-trade-5/" target="_blank">
+                            <img src="assets/img/343034791-1-450x320.jpg" alt="Article Image">
+                            <h3>Rand steady in early trade</h3>
+                            <p>15 Feb 2024 / Alexander Winning, Reuters</p>
+                        </a>
+                    </div>
+                    
+                    <div id="AAPL_price"></div>
+                    <div id="GOOGL_price"></div>
+                    <div id="MSFT_price"></div>
               </div>
           </div>
     </div>
 
     <script src="assets/js/script.js"></script>
+    <script src="data/api.js"></script>
 </body>
 
 </html>

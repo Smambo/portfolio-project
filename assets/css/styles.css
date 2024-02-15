@@ -103,6 +103,36 @@ body {
   color: #666;
 }
 
+.article {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  width: calc(50% - 10px); /* Set width to half of the container width minus margins */
+}
+
+.article img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 5px 5px 0 0; /* Border radius for the image */
+}
+
+.article a {
+  text-decoration: none; /* Remove text decoration from anchor tag */
+}
+
+.article h3 {
+  font-size: 18px;
+  margin: 10px 0 0 10px;
+  color: #333; /* Change color of the h3 element */
+}
+
+.article p {
+  margin: 10px;
+  color: #666; /* Change color of the p element */
+}
+
 /* Responsive styles */
 @media screen and (max-width: 768px) {
   .sidenav {
