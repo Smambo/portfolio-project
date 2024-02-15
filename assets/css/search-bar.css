@@ -1,0 +1,40 @@
+.dashboard-header {
+    display: flex;
+    align-items: center;
+}
+
+.dashboard-header h2 {
+    padding-left: 8px;
+}
+
+.search-bar-container {
+    margin-left: auto; /* Push search bar to the right */
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    width: 200px; /* Adjust width as needed */
+    height: 30px;
+    padding: 5px 30px 5px 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /*background: transparent;*/
+}
+
+.search-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.search-button i {
+    color: #666;
+    position: absolute;
+    right: 27px;
+    top: 50%;
+    transform: translateY(-50%); /* Center button vertically */
+}
