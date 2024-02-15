@@ -106,16 +106,20 @@ body {
 .article {
   margin-bottom: 20px;
   border: 1px solid #ddd;
-  border-radius: 5px;
+  border-radius: 9px;
   overflow: hidden;
-  width: calc(50% - 10px); /* Set width to half of the container width minus margins */
+  width: calc(40% - 10px); /* Set width to half of the container width minus margins */
+  display: inline-block; /* Make articles display inline */
+  vertical-align: top; /*Align articles to the top */
+  box-sizing: border-box;
 }
 
 .article img {
   width: 100%;
-  height: auto;
+  height: 380px;
   display: block;
   border-radius: 5px 5px 0 0; /* Border radius for the image */
+  object-fit: cover;
 }
 
 .article a {
@@ -131,6 +135,20 @@ body {
 .article p {
   margin: 10px;
   color: #666; /* Change color of the p element */
+}
+
+.newslink {
+  border-radius: 8px;
+  background-color: #d1cfcf;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 7px;
+}
+
+.newslink a {
+  text-decoration: none;
+  color: #666;
+  font-weight: 600;
 }
 
 /* Responsive styles */
