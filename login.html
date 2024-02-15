@@ -10,19 +10,37 @@
     <!-- User Login Form -->
     <section id="login">
         <h2>Divitiae</h2>
-        <form id="loginForm" method="post" action="/login">
+        <form id="loginForm" method="post">
             <div>
                 <input type="text" id="loginUsername" name="username" placeholder="Username" required>
             </div>
             <div>
                 <input type="password" id="loginPassword" name="password" placeholder="Password" required>
             </div>
-            <button type="submit" id="loginSubmit" >Login</button>
+            <button type="submit" id="loginSubmit" onclick="login(event)">Login</button>
             <div class="register-link">
                 <span>Don't have an account?</span>
                 <a href="registration.html">Register here</a>
             </div>
         </form>
     </section>
+    <script>
+        function login(event) {
+            event.preventDefault(); // Prevent default form submission behavior
+            var username = document.getElementById("loginUsername").value;
+            var password = document.getElementById("loginPassword").value;
+
+            // Hardcoded credentials (for testing purposes only)
+            var hardcodedUsername = "admin";
+            var hardcodedPassword = "password";
+
+            if (username === hardcodedUsername && password === hardcodedPassword) {
+                // Redirect to main page upon successful login
+                window.location.href = "index.html";
+            } else {
+                alert("Invalid username or password");
+            }
+        }
+    </script>
 </body>
 </html>
