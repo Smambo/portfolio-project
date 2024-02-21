@@ -1,6 +1,8 @@
 ## Stock Portfolio Tracker
 Welcome to the Stock Portfolio Tracker project! This web application allows users to track their stock portfolios in real-time by integrating with financial APIs to fetch live stock data. Users can create and manage multiple portfolios, view detailed stock information, and monitor their investment performance.
 
+Please read my [blog article](https://medium.com/@smambo85/the-challenges-of-creating-my-first-portfolio-project-and-how-i-overcame-them-aa117b1d94ff) documenting the challenges I faced while working on this project and how I overcame them.
+
 ### Features
 Dashboard: View an overview of your portfolios with real-time updates on stock prices and total portfolio value.<br>
 Portfolio Management: Create, edit, and delete portfolios to organize your investments effectively. **<br>
