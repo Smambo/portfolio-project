@@ -27,6 +27,10 @@ cd stock-portfolio-tracker
 Access the Application:
 Open your web browser and navigate to http://localhost:3000 to access the Stock Portfolio Tracker application.
 
+OR
+
+Visit the deployed site [here](https://smambo.github.io/portfolio-project/)
+
 ### Contributing
 Contributions are welcome! If you'd like to contribute to this project, please fork the repository, make your changes, and submit a pull request. For major changes, please open an issue first to discuss the proposed changes.
 
