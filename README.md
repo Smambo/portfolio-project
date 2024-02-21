@@ -10,6 +10,8 @@ Dashboard: View an overview of your portfolios with real-time updates on stock p
 Portfolio Management: Create, edit, and delete portfolios to organize your investments effectively. **<br>
 Stock Details: Get detailed information about individual stocks, including current price, historical data, and company news.<br>
 User Authentication: Secure user authentication system to protect user data and ensure privacy. **<br>
+![Screenshot 2024-02-22 010853](https://github.com/Smambo/portfolio-project/assets/113464914/ea0940a4-b98a-4ab0-983d-7bda2006073f)
+
 
 ### Technologies Used
 Frontend: HTML, CSS, JavaScript<br>
