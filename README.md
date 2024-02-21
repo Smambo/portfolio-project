@@ -11,6 +11,7 @@ Portfolio Management: Create, edit, and delete portfolios to organize your inves
 Stock Details: Get detailed information about individual stocks, including current price, historical data, and company news.<br>
 User Authentication: Secure user authentication system to protect user data and ensure privacy. **<br>
 ![Screenshot 2024-02-22 010853](https://github.com/Smambo/portfolio-project/assets/113464914/ea0940a4-b98a-4ab0-983d-7bda2006073f)
+![Screenshot 2024-02-22 011057](https://github.com/Smambo/portfolio-project/assets/113464914/b77960c0-ad86-41f0-a1f4-7b457938c57e)
 
 
 ### Technologies Used
