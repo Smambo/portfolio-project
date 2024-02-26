@@ -108,7 +108,7 @@ body {
   border: 1px solid #ddd;
   border-radius: 9px;
   overflow: hidden;
-  width: calc(40% - 10px); /* Set width to half of the container width minus margins */
+  width: calc(33%); /* Set width to a third of the container */
   display: inline-block; /* Make articles display inline */
   vertical-align: top; /*Align articles to the top */
   box-sizing: border-box;
